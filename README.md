@@ -1,2 +1,2 @@
 # HTML
-Tjis is one stop tutorial of html
+This is one stop tutorial of html
