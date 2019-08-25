@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smashing HTML-5!</title>
+<link rel="icon" href="dily.png" type='image/png' sizes='16x16'>
+
+</head>
+<body>
+<h1>Smashing HTML-5!</h1>
+<h4>HTML5 in the year 2022 2009</h4>
+<table>
+<thead>
+<tr>
+	<th>Home</th>
+	<th>Portfolio</th>
+	<th>Blog</th>
+	<th>Contact</th>
+</tr>
+</thead>
+</table>
+<div>
+<h3>Featured Articles</h3>
+<em>HTML5 in Smashing magzine!</em>
+<p><img src="dily.png" alt="dily png" sizes="24x24" style="float:right;height:42px;width:42px"></img>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>when an <a href="#">HTML5</a> and <a href="#">CSS3</a> unknow.
+</p>
+</div>
+<div>
+<table>
+<tbody>
+<tr>
+<td>10th October 2005<br>by <a href="#">Engine reverie</a></td>
+<td><h5>This be the title</h5><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></td>
+</tr>
+<tr>
+<td>11th October 2005<br>by <a href="#">Engine reverie</a></td>
+<td><h5>This be the title</h5><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></td>
+</tr>
+<tr>
+<td>12th October 2005<br>by <a href="#">Engine reverie</a></td>
+<td><h5>This be the title</h5><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<table>
+<thead>
+<tr>
+<th>Blogroll</th>
+<th></th>
+<th></th>
+<th>Social</th>
+</tr>
+</thead>
+</table>
+</div>
+</body>
+</html>
