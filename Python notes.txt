@@ -1,0 +1,98 @@
+Memory allocation inside a system is called as a variable.
+    5 Rules for variable declarartion:
+	-It can be alphanumeric
+	-Cannot start with number
+	-No special characters except underscore
+	-Underscore can be taken as variable
+	-Keywords cannot be used
+
+Latest Python version contains 35 keywords
+    To display all the keywords run
+		import keyword
+		print(keyword.kwlist)
+
+Operators are the symbol which performs oprations on the operands
+     Different types of operators are:
+	1)Arithmetic operators ( + - / * % // ** )
+	2)Logical operators (and or not)
+	3)Assignment operators ( = += -= *= )
+	4)Bitwise operators ( & | ^ << >> )
+	5)Relational or Comoparisional operators ( < > <= >= == != )
+	6)Ternary operators ( [on_true] if [expression] else [on_false]  )
+	7)Membership operators ( in, not in )
+	8)Identity operators ( is, not is )   it will check whether both are in same memory location or not
+
+6 Different data types are:
+	1)Numbers (integers, floating, complex)
+	2)String
+	3)Lists
+	4)Tuples
+	5)Dictonaries
+	6)Sets
+
+Conditional statements( if, if elif else, if else, nested if)
+
+debugging module "ipdb" or "pdb"
+
+Looping statements (while, for)
+
+6 data types are divided into 2 type in python:
+	1)mutable data types (list, dictionary,set)
+	2)immutable data types (number,string, tuple)
+
+2 basic operations used for string:
+	1)concatenation(+)
+	2)Repetition(*)
+
+Different methods of string: dir(Str) will give all the internal inbuily functionalities
+	startswith, endswith, isalpha, isalnum, isdigit, title, capitalize, swapcase, index, find, islower, isupper, lower, upper,
+	split, strip, rstrip, lstrip, replace,
+	zfill, count, len
+
+output format:
+	"{}".format( )
+
+Different methods used on lists: (concatenation(+), repetition(*))
+	append(one element at a time that to last), extend(sequence is added), insert(index,element)
+	remove(element), del(element), pop(index), clear(empty the list)
+	count(element that you want to check for repition), index(element), sort, reverse, copy, len 
+
+List comprehenssions : syntax:	[expression for element in sequence]
+
+Dictionary : 
+	accessing : dic_name[key] or dic_name.get(key)
+	methods : get(key), update(dictionary), pop(key), popitem(), clear, keys(), values(), items(), fromkeys(sequence), 
+dictionary comprehension : syntax : { expression for element in sequence }
+
+Sets: are unordered data types
+	methods:	add(element), update(sequences), remove(element), discard(element)
+	operations: union(|), intersection(&), difference(-), Symmetric_Difference(^)
+			intersection_update, difference_update, Symmetric_Difference_update
+	frozenset(sequence) - immutable sets
+
+
+<-----------------------------------------FUNCTIONS-------------------------------------------------------------------------------->
+	use of functions is the code reusability
+	keyword : def
+	syntax :	def func_name():
+				statements
+
+Passing the arguments :
+	1)Positional arguments	: sample(32, 48)
+	2)keyword arguments	: sample(a=32, b=48)
+	3)Default arguments	: def sample(name, city='hyderabad')
+	4)Arbitrary positional arguments	: def sample(*args)		args will be tuple
+						sample(1,2,3,4,5,...)
+	5)Arbitrary keyword arguments	: def sample(**kwargs)			kwargs will be dictionary
+					sample(a=1, b=2, c=3....)
+
+return statement:	return
+recurssion:
+	
+<-----------------------------------------------------Anonymous functions------------------------------------------------------------->
+Functions which doesnt have any name is called as annonymous function or lambda functions.
+	Syntax:	lambda arguments : expression 
+	ex: (lambda a : a*5)(6)
+ map :	map( lambda a : a*3 , a)
+ filter : filter( lambda a: a%2==0,a)
+ reduce : reduce( lambda a,b: a+b,a ) to use reduce we have import it. from functools import reduce
