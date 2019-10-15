@@ -1,3 +1,4 @@
+github , gitlab, bitbucket, etc
 1)	- Download git and install it
 	- In the bash terminal type "git --version" to know the version of the git software that you are using.
 	- Then sign up at github.com
@@ -17,3 +18,18 @@
 	- git commit -m "added abc.html index.html" 
 
 	- git push origin master (Give the correct credentials of your github account)
+
+3) to change git account local (class)
+	git config --global user.email "enter your email"
+	git config --global user.username "enter your username"
+	git remote add origin http://link.github.com.git
+	git push -u origin master
+
+   to git changes testing
+	#git diff
+	
+   to discard the last few commits we have to first get the id of the commit untill it has to be there and
+	#git revert	//search web
+
+   to pull #git pull origin master
+   

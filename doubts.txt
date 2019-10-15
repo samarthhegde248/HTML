@@ -1,0 +1,6 @@
+switch, do while
+sort, sorted
+why arrow function(=>) in js used?
+prototype in js
+read AJAX
+see a .swapcase program in python
