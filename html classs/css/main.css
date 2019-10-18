@@ -1,0 +1,37 @@
+#header{
+			width: 100%;
+			height: 50px;
+			background: crimson;
+			color: #fff;
+		}
+		.demo{
+			font-size: 30px;
+		}
+		div{
+			vertical-align: top;
+		}
+		#mainContent{
+			width: 90%;
+			margin: auto;;
+			height: 500px;
+		}
+		#mainContent div{
+			display: inline-block;
+			background: green;
+			color: #fff;
+			height: 100%;
+		}
+		#nav{
+			width: 24%;
+		}
+		#main{
+			width: 50%;
+		}
+		#sidebar{
+			width: 24%;
+		}
+		#footer{
+			height: 50px;
+			background: crimson;
+			color: #fff;
+		}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       #content ul{
+           border: 1px solid;
+           margin: 0px;
+           padding: 0px;
+           width: 75%;
+           margin: auto;
+       }
+        #content ul li{
+            width: 200px;
+            padding: 10px;
+            display: inline-block;
+            background: #ccc;
+            margin-left: 80px;
+        }
+        #content ul li:first-child{
+            margin-left: 0px;
+        }
+        #content ul li:last-child{
+            margin-left: 87px;
+        }
+        #content ul li:nth-child(2n+2){
+            background-color: lime;
+        }
+        #content ul li p:only-child{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <ul>
+            <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non quisquam recusandae fugiat consequatur
+                magnam excepturi, assumenda itaque? Laboriosam, adipisci dolores.
+            </li>
+            <li>
+                <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non quisquam recusandae fugiat consequatur
+                magnam excepturi, assumenda itaque? Laboriosam, adipisci dolores.</p>
+            </li>
+            <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non quisquam recusandae fugiat consequatur
+                magnam excepturi, assumenda itaque? Laboriosam, adipisci dolores.
+            </li>
+            <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non quisquam recusandae fugiat consequatur
+                magnam excepturi, assumenda itaque? Laboriosam, adipisci dolores.
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .green{
+            background: green;
+        }
+        .red{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="test" class="demo">
+        asdasda
+        <button id="btn"> Add </button>
+        <a href="https://www.lipsum.com/"> lorem ipsum </a>
+    </div>
+
+    <script>
+
+        var AddBtn = document.getElementById('btn');
+        var Test = document.getElementById('test');
+        // AddBtn.onclick = function(){
+        //     alert();
+        // };
+
+        AddBtn.addEventListener('click', function(){
+            demo(123);
+            // console.log(this);
+        },true);
+
+        Test.addEventListener('click', function(){
+            alert(234);
+        },true);
+        
+        function demo(a){
+            alert(a);
+        }
+
+        Test.id = "one";
+        Test.className = "red";
+        console.log(Test.id);
+
+
+        // setAttribute(). removeAttribute();
+        Test.setAttribute('id','two');
+        Test.setAttribute('class','green red');
+        console.log(Test.className);
+        // Test.removeAttribute('class');
+        // Test.setAttribute('href', 'newLink');
+        // Test.setAttribute('src', 'newLink');
+
+
+
+    </script>
+</body>
+</html>

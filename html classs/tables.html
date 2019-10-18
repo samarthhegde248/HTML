@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table{
+            width: 75%;
+            margin: auto;
+        }
+        table,tr,th,td{
+            border-bottom: 1px solid #000;
+            border-collapse: collapse;
+        }
+        td,th{
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        table tr:nth-child(even){
+            background: #ccc;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            
+                <tr>
+                        <!--<td class="tdcolumn"><b>Instrument</b></td>-->
+                        <th class="tdcolumn"><b>Contract</b></th>
+                        <th class="tdcolumn"><b>LTP</b></th>
+                        <!--<td class="tdcolumn"><b>Option Type</b></td>-->
+                        <th class="tdcolumn"><b>Strike Price</b></th>
+                        <th class="tdcolumn"><b>Best Bid Qty</b></th>
+                        <th class="tdcolumn"><b>Best Bid Price</b></th>
+                        <th class="tdcolumn"><b>Best Ask Price</b></th>
+                        <th class="tdcolumn"><b>Best Ask Qty</b></th>
+                        <th class="tdcolumn"><b>Spread</b></th>
+                        <th class="tdcolumn"><b>Volume (Contracts)</b></th>
+                        <th class="tdcolumn"><b>Traded Value (₹ Cr.)</b></th>
+                        <th class="tdcolumn"><b>Turnover-Premium(₹ Cr.)</b></th>
+                        <th class="tdcolumn"><b>OI</b></th>
+                        <th class="tdcolumn"><b>No.of Trades</b></th>
+                    </tr>
+        </thead>
+        <tbody>
+            <!-- ngRepeat: cd in CurrDerivMAC.Table | limitTo:5 track by cd.ScripCode --><tr ng-repeat="cd in CurrDerivMAC.Table | limitTo:5 track by cd.ScripCode" class="ng-scope">
+                <!--<td align="left" class="tdcolumn">{{cd.Product_Cd}}</td>-->
+                <td align="left" class="tdcolumn"><a href="/stock-share-price/currency/1020905/20190828" class="ng-binding">USDINR19AUGFUT</a></td>
+                <td align="right" class="tdcolumn ng-binding">71.4775</td>
+                <!--<td align="right" class="tdcolumn">{{cd.Call_Put}}</td>-->
+                <td align="right" class="tdcolumn ng-binding">0.00</td>
+                <td align="right" class="tdcolumn ng-binding">0</td>
+                <td align="right" class="tdcolumn ng-binding">0.0000</td>
+                <td align="right" class="tdcolumn ng-binding">0.0000</td>
+                <td align="right" class="tdcolumn ng-binding">0</td>
+                <td align="right" class="tdcolumn ng-binding"></td>
+                <td align="right" class="tdcolumn ng-binding">1500408</td>
+                <td align="right" class="tdcolumn ng-binding">10758.5</td>
+                <td align="right" class="tdcolumn ng-binding"></td>
+                <td align="right" class="tdcolumn ng-binding">898987</td>
+                <td align="right" class="tdcolumn ng-binding">35271</td>
+            </tr><!-- end ngRepeat: cd in CurrDerivMAC.Table | limitTo:5 track by cd.ScripCode --><tr ng-repeat="cd in CurrDerivMAC.Table | limitTo:5 track by cd.ScripCode" class="ng-scope">
+                <!--<td align="left" class="tdcolumn">{{cd.Product_Cd}}</td>-->
+                <td align="left" class="tdcolumn"><a href="/stock-share-price/currency/1024913/20190926" class="ng-binding">USDINR19SEPFUT</a></td>
+                <td align="right" class="tdcolumn ng-binding">71.7350</td>
+                <!--<td align="right" class="tdcolumn">{{cd.Call_Put}}</td>-->
+                <td align="right" class="tdcolumn ng-binding">0.00</td>
+                <td align="right" class="tdcolumn ng-binding">0</td>
+                <td align="right" class="tdcolumn ng-binding">0.0000</td>
+                <td align="right" class="tdcolumn ng-binding">0.0000</td>
+                <td align="right" class="tdcolumn ng-binding">0</td>
+                <td align="right" class="tdcolumn ng-binding"></td>
+                <td align="right" class="tdcolumn ng-binding">642085</td>
+                <td align="right" class="tdcolumn ng-binding">4621.2071</td>
+                <td align="right" class="tdcolumn ng-binding"></td>
+                <td align="right" class="tdcolumn ng-binding">985624</td>
+                <td align="right" class="tdcolumn ng-binding">15702</td>
+            </tr><!-- end ngRepeat: cd in CurrDerivMAC.Table | limitTo:5 track by cd.ScripCode --><tr ng-repeat="cd in CurrDerivMAC.Table | limitTo:5 track by cd.ScripCode" class="ng-scope">
+                <!--<td align="left" class="tdcolumn">{{cd.Product_Cd}}</td>-->
+                <td align="left" class="tdcolumn"><a href="/stock-share-price/currency/1038324/20190828" class="ng-binding">USDINR19AUG72.2500CE</a></td>
+                <td align="right" class="tdcolumn ng-binding">0.0050</td>
+                <!--<td align="right" class="tdcolumn">{{cd.Call_Put}}</td>-->
+                <td align="right" class="tdcolumn ng-binding">72.25</td>
+                <td align="right" class="tdcolumn ng-binding">0</td>
+                <td align="right" class="tdcolumn ng-binding">0.0000</td>
+                <td align="right" class="tdcolumn ng-binding">0.0000</td>
+                <td align="right" class="tdcolumn ng-binding">0</td>
+                <td align="right" class="tdcolumn ng-binding"></td>
+                <td align="right" class="tdcolumn ng-binding">425817</td>
+                <td align="right" class="tdcolumn ng-binding">3077.1196</td>
+                <td align="right" class="tdcolumn ng-binding">0.59</td>
+                <td align="right" class="tdcolumn ng-binding">5323</td>
+                <td align="right" class="tdcolumn ng-binding">1796</td>
+            </tr><!-- end ngRepeat: cd in CurrDerivMAC.Table | limitTo:5 track by cd.ScripCode --><tr ng-repeat="cd in CurrDerivMAC.Table | limitTo:5 track by cd.ScripCode" class="ng-scope">
+                <!--<td align="left" class="tdcolumn">{{cd.Product_Cd}}</td>-->
+                <td align="left" class="tdcolumn"><a href="/stock-share-price/currency/1038296/20190828" class="ng-binding">USDINR19AUG70.2500PE</a></td>
+                <td align="right" class="tdcolumn ng-binding">0.0025</td>
+                <!--<td align="right" class="tdcolumn">{{cd.Call_Put}}</td>-->
+                <td align="right" class="tdcolumn ng-binding">70.25</td>
+                <td align="right" class="tdcolumn ng-binding">0</td>
+                <td align="right" class="tdcolumn ng-binding">0.0000</td>
+                <td align="right" class="tdcolumn ng-binding">0.0000</td>
+                <td align="right" class="tdcolumn ng-binding">0</td>
+                <td align="right" class="tdcolumn ng-binding"></td>
+                <td align="right" class="tdcolumn ng-binding">268020</td>
+                <td align="right" class="tdcolumn ng-binding">1882.9075</td>
+                <td align="right" class="tdcolumn ng-binding">0.07</td>
+                <td align="right" class="tdcolumn ng-binding">3597</td>
+                <td align="right" class="tdcolumn ng-binding">679</td>
+            </tr><!-- end ngRepeat: cd in CurrDerivMAC.Table | limitTo:5 track by cd.ScripCode --><tr ng-repeat="cd in CurrDerivMAC.Table | limitTo:5 track by cd.ScripCode" class="ng-scope">
+                <!--<td align="left" class="tdcolumn">{{cd.Product_Cd}}</td>-->
+                <td align="left" class="tdcolumn"><a href="/stock-share-price/currency/1038542/20190828" class="ng-binding">USDINR19AUG70.7500PE</a></td>
+                <td align="right" class="tdcolumn ng-binding">0.0050</td>
+                <!--<td align="right" class="tdcolumn">{{cd.Call_Put}}</td>-->
+                <td align="right" class="tdcolumn ng-binding">70.75</td>
+                <td align="right" class="tdcolumn ng-binding">0</td>
+                <td align="right" class="tdcolumn ng-binding">0.0000</td>
+                <td align="right" class="tdcolumn ng-binding">0.0000</td>
+                <td align="right" class="tdcolumn ng-binding">0</td>
+                <td align="right" class="tdcolumn ng-binding"></td>
+                <td align="right" class="tdcolumn ng-binding">246781</td>
+                <td align="right" class="tdcolumn ng-binding">1746.0376</td>
+                <td align="right" class="tdcolumn ng-binding">0.06</td>
+                <td align="right" class="tdcolumn ng-binding">5546</td>
+                <td align="right" class="tdcolumn ng-binding">802</td>
+            </tr><!-- end ngRepeat: cd in CurrDerivMAC.Table | limitTo:5 track by cd.ScripCode -->
+
+
+        </tbody>
+    </table>
+</body>
+</html>

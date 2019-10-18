@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>    
+
+        var obj = {
+            name:'shiva',
+            age:30,
+            fullName: function(){
+                return this.name + "--" + this.age;
+            }
+        }
+
+        // call, apply and bind
+        function test(salary){
+            return this.name + "--" +salary;
+        }
+
+        console.log(test.call(obj, 1000));
+        console.log(test.apply(obj, [1000]));
+        var test123 = test.bind(obj);
+        console.log(test123(120000));
+
+
+
+
+
+
+
+
+    
+        function person(name,age){
+            this.name = name;
+            this.age = age;
+        }
+
+        person.prototype.company = 'digital';
+        person.prototype.fullName = function() {
+            return this.name + '-' + this.age;
+        }
+
+        var emp1 = new person('shiva', 30);
+        var emp2 = new person('prasad', 32);
+        // console.log(emp2);
+
+        // call, apply and Bind
+        function salary(name,age,salary){
+            person.call(this,name,age);
+            this.salary = salary;
+        }
+
+        salary.prototype = new person();
+
+        var emp1 = new person('ram',30);
+        var emp3 = new salary('ram',30,1000);
+        console.log(emp3);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

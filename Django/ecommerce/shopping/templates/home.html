@@ -1,5 +1,0 @@
-<h1>Welcome to our Shopping site</h1>
-
-{% for item in products %}
-    <div><a href={% url 'ProductDetailView' item.id %}>{{ item }}</a></div>
-{% endfor %}

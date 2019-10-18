@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 1000px;
+            height: 300px;
+            background:url(./images/one.jpeg);
+            padding: 10px;
+            color: #ccc;
+            margin: auto;
+            position: relative;
+            z-index: 111;
+            /* visibility: hidden; */
+        }
+        #main::before{
+            content: "-----";
+            width: 90%;
+            height: 90%;
+            background: #000;
+            opacity: 0.2;
+            position: absolute;
+            top: 15px;
+            left: 50px;
+            z-index: -1111;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="main">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, quam?
+    </div>
+    sadasdas
+
+</body>
+</html>

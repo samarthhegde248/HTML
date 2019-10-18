@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+
+
+        // OOJS
+        
+        // Hoisting (moving decleration ), closure (inner function will have acces to parent function values and parasm),
+        // Encapsulation, constructor, prototypes, call, apply, bind,
+
+        // function demo(a){
+        //     var b = 10;
+        //     function test(){
+        //         console.log(a + b);
+        //     }
+        //     test();
+        // }
+        // demo(20);
+
+        var gem = (function(){
+
+            var obj = {};
+
+            var check = 'some name...';
+            var check1 = 'some nam.';
+            console.log(check);   
+            obj.check = function(a,b){
+                return a + b;
+            };
+            return obj; 
+
+        })();
+
+        console.log(gem.check(1,3));
+
+
+        var arr = new Array();
+        var str = new String();
+        var obj = new Object();
+
+        obj.name = 'shiva';
+        obj.age = 30;
+
+        obj.fullName = function(){
+            return this.name;
+        }
+
+        console.log(obj);
+
+        // constructor
+        function Document(name){
+            this.getE_Id = function(){
+                return document.querySelector('#'+name);
+            };
+        }   
+        var Document = new Document('demo');
+        console.log(Document.getE_Id());
+
+        // var Prasad = new person('Prasad');
+        // var Test = new person('Test...');
+    </script>
+</body>
+</html>

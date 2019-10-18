@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+        integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            height: 100vh;
+            background: url(./images/bgForm.jpg) no-repeat center fixed;
+            background-size: cover; 
+        }
+        #formWrap{
+            width: 20%;
+            border: 1px solid;
+            padding: 50px;
+            margin:230px auto;
+            background: rgba(60, 60, 59, 0.5);
+        }
+        .fL{
+            float: left;
+            width: 60%;
+        }
+        .form-control{
+            margin-top: 10px;
+            position: relative;
+            width: 90%;
+            border: 0px;
+            border-bottom: 1px solid;
+            
+        }
+        .form-control input{
+            width: 100%;
+            padding: 10px 10px 10px 30px;
+            outline: none;
+            background: none;
+            border: 0px;
+            color: #fff;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+        .form-control i{
+         position: absolute;
+         left: 6px;
+         color: lightseagreen;
+         top: 12px;   
+         font-size: 18px;
+        }
+        .btnWrap{
+            text-align: center;
+            margin-top: 25px; 
+        }
+        .btnWrap button{
+            width: 100px;
+            padding: 10px;
+            outline: none;
+            border: 0px;
+            background: lightseagreen;
+            color: #fff;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="fL">
+            <h1> Welcome Note...</h1>
+        </div>
+        <div id="formWrap" class="fL">
+            <form action="#" autocomplete="off">
+                <div class="form-control">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="userName" id="userName" class="userName" placeholder="user name" required>
+                </div>
+                <div class="form-control">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" id="password" class="password" placeholder="password" minlength="6" required>
+                </div>
+                <div class="btnWrap">
+                    <button> SIGN IN </button>
+                </div>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>

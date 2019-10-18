@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .dropDown{
+            width: 100px;
+            margin: 100px;
+            
+        }
+        .dropDown span{
+            padding: 10px 15px 10px 15px;
+            border: 1px solid;
+            position: relative;
+        }
+        .dropDown span:after{
+            content: "";
+            position: absolute;
+            right: 5px;
+            top: 15px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+        }
+        .dropDown ul{
+            display: none;
+        }
+        .dropDown:hover ul{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropDown">
+        <span> Temp1 </span>
+        <ul>
+            <li>
+                Temp11
+            </li>
+            <li>
+                Temp11
+            </li>
+            <li>
+                Temp11
+            </li>
+            <li>
+                Temp11
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

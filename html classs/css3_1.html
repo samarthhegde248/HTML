@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        #one{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            text-align: center;
+            line-height:200px;  
+            transition-duration: 1s;
+            transition-property: all;
+            /* transition-delay: 3s; */
+            transition-timing-function: cubic-bezier(.81,-0.11,.54,.11);
+        }
+
+        #one:hover{
+             width: 500px;
+            /*height: 300px; */
+            /* letter-spacing: 20px; */
+        }
+        ul li{
+            width: 200px;
+            height: 200px;
+            margin-left: 100px;
+            text-align: center;
+            line-height:200px;
+            border: 1px solid;
+            display: inline-block;
+            transition: 1s;
+        }
+        #scale:hover{
+            transform: scale(1.5,1.5);
+        }
+        #rotate:hover{
+            transform: rotate(3turn);
+            border-radius: 50%;
+        }
+        #translate:hover{
+            transform: translate(100px,100px);
+        }
+        #skew:hover{
+            transform: skew(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="one">
+        some text...
+    </div>
+    <ul>
+        <li id="scale">
+            SCALE
+        </li>   
+        <li id="rotate">
+            ROTATE
+        </li>   
+        <li id="translate">
+            TRANSLATE
+        </li>   
+        <li id="skew">
+            SKEW
+        </li>   
+    </ul>
+</body>
+</html>

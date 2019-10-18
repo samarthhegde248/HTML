@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px; 
+            transition: 1s;
+        }
+        #btn{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        ul{
+            position: relative;
+            width: 200px;
+            height: 100vh;
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn"> Menu </button>
+    <div class="demo">
+        <ul>
+            <li>
+                Home
+            </li>
+            <li>
+                About
+            </li>
+            <li>
+                Contact
+            </li>
+
+        </ul>
+    </div>
+    <script>
+        var btn = document.getElementById('btn');
+        var UL = document.getElementsByTagName('ul')[0];
+
+
+        UL.style.marginLeft = 0 + 'px';
+
+        btn.onclick = function(){
+            if(UL.style.marginLeft == '0px'){
+                UL.style.marginLeft = '-200px';
+                // UL.style.display = 'none';
+            }else{
+                UL.style.marginLeft = '0px';
+            }
+        }
+    </script>
+</body>
+
+</html>

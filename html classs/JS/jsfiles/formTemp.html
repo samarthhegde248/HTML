@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+        integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700,900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Titillium Web', sans-serif;
+            transition: 1s;
+        }
+
+        .wrap {
+            height: 100vh;
+        }
+
+        .leftwrap {
+            width: 75%;
+            height: 100vh;
+            float: left;
+            background: url('../../Images/formbg.jpg') no-repeat;
+            background-size: cover;
+        }
+
+        .rightWrap {
+            width: 25%;
+            height: 100vh;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+            padding-top: 100px;
+            background: #00293f;
+        }
+
+        .formBox {
+            width: 90%;
+            margin: 100px auto;
+        }
+
+        form {
+            margin-top: 100px;
+        }
+
+        .form-container {
+            width: 90%;
+            margin: auto;
+            /* border: 1px solid;      */
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .form-container input[type='text'],
+        input[type='password'],
+        input[type='email'],
+        select {
+            width: 100%;
+            line-height: 35px;
+            /* border-radius: 5px; */
+            border: 1px solid;
+            padding-left: 35px;
+            outline: none;
+            box-sizing: border-box;
+            background: none;
+            border: none;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+            font-size: 18px;
+        }
+
+        select {
+            color: #fff;
+            background: #00293f;
+        }
+
+        .form-container i {
+            position: absolute;
+            left: 5px;
+            top: 10px;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .form-container button {
+            position: relative;
+        }
+
+        .form-container button i {
+            position: absolute;
+            right: 5px;
+            top: 10px;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .btnSuccess {
+            width: 100%;
+            text-align: center;
+            background: #25896e;
+            outline: none;
+            padding: 5px;
+            border: 1px solid #000;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px #000;
+
+        }
+
+        .radiowrap {
+            color: #fff;
+            margin-left: 5px;
+        }
+
+        .pos-icon {
+            top: 5px !important;
+        }
+
+        .mt-10 {
+            margin-top: 10px;
+        }
+
+        .mt-20 {
+            margin-top: 20px;
+        }
+
+        .ml-20 {
+            margin-left: 20px;
+        }
+
+        .mr-30 {
+            margin-right: 30px;
+        }
+
+        .ht-30 {
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .mtb-5 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+
+        }
+
+        .text-right {
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            padding-top: 15px;
+        }
+
+        .text-right a {
+            color: #fff;
+        }
+
+        #tableBind {
+            width: 90%;
+            margin: auto;
+            padding-top: 50px;
+            display: none;
+        }
+
+        #tableBind table {
+            width: 100%;
+            text-align: center;
+        }
+
+        #tableBind table,
+        tr,
+        td,
+        th {
+            border-bottom: 1px solid #000;
+            border-collapse: collapse;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="formwrap wrap" id="main1Wrap">
+        <div class="leftwrap"></div>
+        <div class="rightWrap">
+            <div class="formBox">
+                <form autocomplete="off">
+                    <div class="form-container">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="username" id="username" class="username" placeholder="username">
+                        <span id="usererror"></span>
+                    </div>
+                    <div class="form-container">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" id="password" class="password" placeholder="password">
+                        <span id="passerror"></span>
+                    </div>
+                    <div class="form-container">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="email" id="email" class="email" placeholder="email">
+                    </div>
+                    <div class="form-container">
+                        <i class="fas fa-phone-square-alt"></i>
+                        <input type="text" name="contact" id="contact" class="contact" placeholder="contact">
+                    </div>
+                    <div class="form-container mtb-5 ht-30">
+                        <label class="radiowrap mr-30">
+                            <input type="radio" name="gender" id="gender" class="gender" value="male">
+                            <span>
+                                Male
+                            </span>
+                        </label>
+                        <label class="radiowrap">
+                            <input type="radio" name="gender" id="genderf" class="gender" value="female">
+                            Female
+                        </label>
+                    </div>
+                    <div class="form-container mt-10">
+                        <i class="fas fa-globe-asia pos-icon"></i>
+                        <select name="country" id="country">
+                            <option value=""> Country </option>
+                            <option value="Ind"> India </option>
+                            <option value="America"> America </option>
+                            <option value="England"> England </option>
+                        </select>
+                    </div>
+                    <div class="mt-20">
+                        <button type="button" class="btnSuccess" id="btn">
+                            <i class="fas fa-sign-in-alt"></i> SIGN UP
+                        </button>
+                        <button type="button" class="btnSuccess" id="Signinbtn" style="display: none;">
+                            <i class="fas fa-sign-in-alt"></i> SIGN IN
+                        </button>
+                        <button type="button" class="btnSuccess" id="update" style="display: none;">
+                                <i class="fas fa-sign-in-alt"></i> UPDATE
+                            </button>
+                    </div>
+                    <div class="text-right">
+                        <span> Already Register ? <a href="javascript:void(0)" id="signin"> Sign In </a>
+                            <a href="javascript:void(0)" id="signup" style="display: none;"> Sign Up </a>
+                        </span>
+                    </div>
+                    <div class="text-right">
+                        <span> Proceed to Dashboard ? <a href="javascript:void(0)" id="dashboard"> DashBoard </a>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="wrap" id="tableBind">
+        <h2 style="text-align: center; margin-bottom:20px;"> DashBoard</h2>
+        <h3 style="text-align: center; margin-bottom: 10px;" id="goback"> <a href="#"> GO Back</a></h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        sl.no
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Password
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        COntact
+                    </th>
+                    <th>
+                        Gender
+                    </th>
+                    <th>
+                        Country
+                    </th>
+                    <th>
+                        Actions
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tBind">
+
+            </tbody>
+        </table>
+    </div>
+    <script>
+        var userName = document.getElementById('username');
+        var password = document.getElementById('password');
+        var email = document.getElementById('email');
+        var contact = document.getElementById('contact');
+
+        var usererror = document.getElementById('usererror');
+        var passerror = document.getElementById('passerror');
+
+        var btn = document.getElementById('btn');
+        var gender = document.getElementsByClassName('gender');
+        var tBind = document.getElementById('tBind');
+        var signin = document.getElementById('signin');
+        var country = document.getElementById('country');
+        var formBox = document.getElementsByClassName('formBox')[0];
+        var signup = document.getElementById('signup');
+        var update = document.getElementById('update');
+        var dashboard = document.getElementById('dashboard');
+        var tableBind = document.getElementById('tableBind');
+        var main1Wrap = document.getElementById('main1Wrap');
+        var goback = document.getElementById('goback');
+
+        dashboard.onclick = function () {
+            tableBind.style.display = 'block';
+            main1Wrap.style.display = 'none';
+
+        }
+
+        goback.onclick = function () {
+            tableBind.style.display = 'none';
+            main1Wrap.style.display = 'block';
+        }
+        var arr = [];
+
+        signin.onclick = function () {
+            email.parentNode.style.display = "none";
+            contact.parentNode.style.display = "none";
+            gender[0].parentNode.parentNode.style.display = "none";
+            country.parentNode.style.display = "none";
+            formBox.style.marginTop = '150px';
+            signup.style.display = 'inline';
+            this.style.display = 'none';
+            Signinbtn.style.display = 'inline';
+            btn.style.display = 'none';
+        }
+
+        signup.onclick = function () {
+            email.parentNode.style.display = "block";
+            contact.parentNode.style.display = "block";
+            gender[0].parentNode.parentNode.style.display = "block";
+            country.parentNode.style.display = "block";
+            formBox.style.marginTop = '100px';
+            this.style.display = 'none';
+            signin.style.display = 'inline';
+            Signinbtn.style.display = 'none';
+            btn.style.display = 'inline';
+        }
+
+        console.log(JSON.parse(localStorage.getItem('arr')));
+
+        btn.addEventListener('click', function () {
+
+
+            var nameRegEx = /^[a-zA-Z]+$/g;
+            var numRegEx = /^[0-9]+$/g;
+            var EmailRegEx = /^[a-zA-Z]+[0-9]+@+[a-zA-Z]+\.([a-z\.]){0,6}?$/g;
+
+
+
+            if(!nameRegEx.test(userName.value)){
+                console.log('your name should not contain other than char"s')
+                return false;
+            }else if(password.value.length < 6){
+                console.log('Please enter min 6 char"s');
+                return false;
+            }else if(!EmailRegEx.test(email.value)){
+                console.log('Your email patter shoud be: abc1@gmail.com');
+                return false;
+            }else if(!numRegEx.test(contact.value)){
+                console.log(' your contact number shoulnd not contain other num"s ');
+                return false;
+            }else{
+
+            
+
+
+            // debugger;
+
+            var genderValue = "";
+            for (var i = 0; i < gender.length; i++) {
+                if (gender[i].checked == true) {
+                    console.log(gender[i].value);
+                    genderValue = gender[i].value;
+                }
+            }
+
+            var Obj = {};
+            
+            Obj.Name = userName.value;
+            Obj.Passcode = password.value;
+            Obj.Email = email.value;
+            Obj.Contact = contact.value;
+            Obj.Gender = genderValue;
+            Obj.Country = country.value;
+
+            
+
+            console.log(arr);
+            if(localStorage.getItem('arr') != "" || localStorage.getItem('arr') != undefined || localStorage.getItem(arr) != null){
+                arr.push(Obj);
+                localStorage.setItem('arr', JSON.stringify(arr));
+            }else{
+                arr = [];
+            }
+
+            console.log(JSON.parse(localStorage.getItem('arr')));
+
+            var TR = document.createElement('tr');
+            var slTd = document.createElement('td');
+            var NameTd = document.createElement('td');
+            NameTd.innerText = userName.value;
+
+            var passTd = document.createElement('td');
+            passTd.innerText = password.value;
+
+            var emailTd = document.createElement('td');
+            emailTd.innerText = email.value;
+
+
+            var contactTd = document.createElement('td');
+            contactTd.innerText = contact.value;
+
+            var genderTd = document.createElement('td');
+            genderTd.innerText = genderValue;
+
+            var countryTd = document.createElement('td');
+            countryTd.innerText = country.value;
+
+
+            var ActionTD = document.createElement('td');
+
+            var Edit = document.createElement('button');
+                Edit.innerText = 'Edit';
+            var Delete = document.createElement('button');
+                Delete.innerText = 'Delete';
+
+            ActionTD.appendChild(Edit);
+            ActionTD.appendChild(Delete);
+
+
+            TR.appendChild(slTd);
+            TR.appendChild(NameTd);
+            TR.appendChild(passTd);
+            TR.appendChild(emailTd);
+            TR.appendChild(contactTd);
+            TR.appendChild(genderTd);
+            TR.appendChild(countryTd);
+            TR.appendChild(ActionTD);
+
+
+            tBind.appendChild(TR);
+
+
+
+            Edit.onclick = function(){
+                // console.log(this.parentNode.parentNode.children);
+
+                
+                update.style.display = 'inline';
+                btn.style.display = 'none';
+
+                tableBind.style.display = 'none';
+                main1Wrap.style.display = 'block';
+
+                var tdText = this.parentNode.parentNode.children;
+
+                userName.value = tdText[1].innerText;
+                password.value = tdText[2].innerText;
+                email.value = tdText[3].innerText;
+                contact.value = tdText[4].innerText;
+
+
+                if(tdText[5].innerText == 'Male' || tdText[5].innerText == 'male'){
+                        gender[0].checked = true;
+                    }else if(tdText[5].innerText == 'female' || tdText[5].innerText == 'Female'){
+                        gender[1].checked = true;
+                    }else{
+                        gender[1].checked = false;
+                        gender[0].checked = false;
+                    }
+
+                // for (var k = 0; k < gender.length; k++) {
+                //     if (tdText[5].innerText == gender[k].value) {
+                //         gender[k].checked = true;
+                //     }
+                // };
+
+                country.value = tdText[6].innerText;
+                
+
+                // tdText[1].innerText = userName.value;
+
+                update.onclick = function(){
+                    tdText[1].innerText = userName.value; 
+                    tdText[2].innerText = password.value;
+                    tdText[3].innerText = email.value;
+                    tdText[4].innerText = contact.value;
+
+                    if(gender[0].checked == true){
+                        genderValue = 'Male';
+                    }else{
+                        genderValue = 'Female';
+                    }
+
+                    tdText[5].innerText = genderValue;
+                    tdText[6].innerText = country.value;
+                    
+                    tableBind.style.display = 'block';
+                    main1Wrap.style.display = 'none';
+
+                    this.style.display = 'none';
+                    btn.style.display = 'block';
+
+
+
+                    userName.value = "";
+            password.value = "";
+            email.value = "";
+            contact.value = "";
+
+            for (var j = 0; j < gender.length; j++) {
+                if (gender[j].checked == true) {
+                    gender[j].checked = false;
+
+                }
+            };
+
+            country.value = "";
+
+                }
+            }
+
+            Delete.onclick = function(){
+                tBind.removeChild(this.parentNode.parentNode);                
+            }
+
+
+            // if(userName.value == '' || userName.value.length < 3){
+            //     console.log('please enter min 3 char"s');
+            //     userName.style.color = 'red';
+            //     usererror.innerText = '! please enter min 3 char"s';
+            //     usererror.style.color = 'red';
+            // }else if(password.value.length <= 6){
+            //     userName.style.color = '#000';
+            //     usererror.innerText = '';
+            //     usererror.style.color = '';
+            //     password.style.color = 'red';
+            //     passerror.innerText = 'Pleas enter min 6 words';
+            //     passerror.style.color = 'red';
+            // }
+
+
+            userName.value = "";
+            password.value = "";
+            email.value = "";
+            contact.value = "";
+
+            for (var j = 0; j < gender.length; j++) {
+                if (gender[j].checked == true) {
+                    gender[j].checked = false;
+
+                }
+            };
+
+            country.value = "";
+
+
+        }
+        });
+    </script>
+</body>
+</html>
