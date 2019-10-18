@@ -1,0 +1,16 @@
+<form method="POST">
+	{% csrf_token %}
+  Name:<br>
+  <input type="text" name="username" value="{{details.username}}"><br>
+  Email:<br>
+  <input type="text" name="email" value="{{details.email}}"><br>
+  Mobile:<br>
+  <input type="text" name="mobile" value="{{custom_data.mobile}}"><br>
+  Address:<br>
+  <input type="text" name="address" value="{{custom_data.address}}"><br>
+  Aadhar:<br>
+  <input type="text" name="aadhar_no" value="{{custom_data.aadhar_no}}"><br>
+  Password:<br>
+  <input type="password" name="password" value=""><br>
+  <input type="submit" name="">
+</form>

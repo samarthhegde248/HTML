@@ -1,0 +1,31 @@
+Django --- It is web development frmework for python ..
+
+# History:-
+	# holovaty and willison ---- 2003
+	# Django(0.1) -- july 2005 
+	# django -- Reihrient Django...
+
+# Features:-
+	# Open source
+	# Default Authorisation...
+	# Admin Interface
+	# Default Development server
+	# DRY(Dont Repeat Yourself)
+	# Mutlilanguages..
+	# Default Folder structure..
+	# Django suport all the database..(default database sqlite) 
+
+# insatallation...
+	install python
+
+# install django
+	pip install django==2.0.1
+
+# Project and App
+
+App -- functionalities
+Project -- Combination of functonalities..
+
+
+
+# FLow of Django ProjectS

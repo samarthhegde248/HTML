@@ -1,0 +1,11 @@
+<form method="POST">
+	{% csrf_token %}
+  Name:<br>
+  <input type="text" name="name" value="{{details.name}}"><br>
+  Email:<br>
+  <input type="text" name="email" value="{{details.email}}"><br>
+  Mobile:<br>
+  <input type="text" name="mobile" value="{{details.mobile}}"><br>
+  <input type="submit" name="">
+  <button><a href="{% url 'delete_user' pk=details.pk %}">DELETE</a></button>
+</form>

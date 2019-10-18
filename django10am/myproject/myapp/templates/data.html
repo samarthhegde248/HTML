@@ -1,0 +1,20 @@
+{% include 'base.html' %}
+
+<h1>Data Page</h1>
+
+
+
+{% if user.is_authenticated %}
+	{% if user.is_superuser %}
+		{{user}} you have logged in successfully! Your are Admin<br> 
+	{% else %}
+		{{user}} you have logged in successfully! Your are NormalUser<br>
+	{% endif %}
+{% endif %}
+
+
+
+{% for i in details %}
+
+	<a href="{% url 'single_data' pk=i.pk %}">{{i.name}}</a><br>
+{% endfor %}
