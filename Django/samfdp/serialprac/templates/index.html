@@ -1,0 +1,5 @@
+<ul>
+        {% for i in albums %}
+            <li><a href={% url 'details' i.pk %}>{{i.songName}}</a></li>
+        {% endfor %}
+    </ul>    

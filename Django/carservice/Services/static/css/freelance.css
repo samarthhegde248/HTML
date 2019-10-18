@@ -1,0 +1,247 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: #ecf0f5;
+}
+#logo{
+    user-select: none;
+}
+header{
+    width: 90%;
+    margin: auto;
+    background: black;
+    /* #367fa9; */
+    display: flex;
+    align-content: center;
+    padding: 1%;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 2;
+    top:0;
+    color: white;
+}
+nav{
+    width: 50%;
+    display: flex;
+    align-content: center;
+    margin-left: 25%;
+}
+nav > div{
+    margin: 0% 1%;
+    padding: 1% 0%;
+    width: 80%;
+    background: rgba(255,255,255,0.5);
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    user-select: none;
+}
+#wlcmhd, #wlcmp{
+    display: inline;
+    position: relative;
+    z-index: 1;
+    color: white;
+    /* opacity: 0.8; */
+    user-select: none;
+    pointer-events: none;
+}
+#wlcmp{
+    background-color: #aaa;
+    color:black;
+    line-height: 150%;
+    padding: 0% 1%;
+    text-align: center;
+}
+#wlcmWrap{
+    display: inline;
+    position: relative;
+    z-index: 1;
+    bottom: 70%;
+    pointer-events: none;
+}
+#Rarr{
+    margin: 0%;
+    height: 6%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    width: 4%;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    right: 1%;
+    background: rgba(255,255,255,0.5);
+}
+#Rarr > a, #Larr > a{
+    vertical-align: -1.5vh;
+    outline: none;
+}
+#Larr{
+    margin: 0%;
+    height: 6%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    width: 4%;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    left: 1%;
+    background: rgba(255,255,255,0.5);
+}
+#slide > img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* bottom: 7%; */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+main div{
+    height: 20em;
+    width: 98%;
+    margin: 0.5% auto;
+    text-align: center;
+    background: white;
+}
+article{
+    margin: 1% auto;
+    text-align: center;
+}
+article > section{
+    display: inline-block;
+    width: 30%;
+    margin: 2% 1%;
+    background: rgba(255, 0, 0,0.9);
+    padding-bottom: 2%;
+    color: white;
+}
+section > h3, h4{
+    margin: 3% 0% 1% 0%;
+}
+section > p{
+    margin-bottom: 3%;
+}
+#lstSec{
+    display: block;
+    background: #222d32;
+}
+#wrkDay {
+    background: #222d32;
+    vertical-align: 80%;
+    margin: 0% 2%;
+    padding: 2% 0%;
+    text-align: center;
+    user-select: none;
+} 
+#wrkDay > div {
+    height: 0%;
+    background: white;
+    width: 10%;
+    color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0% 1%;
+    padding: 1%;
+}
+#schedule{
+    background: none;
+    vertical-align: 140%;
+    padding-bottom: 0%;
+}
+#schBtn{
+    width: 80%;
+    border: 1px solid white;
+    background: navy;
+    border-radius:300px; 
+    vertical-align: 80%;
+    margin: 0%;
+    padding: 2% 0%;
+    box-shadow: 1px 1px 8px;
+    user-select: none;
+}
+#contact{
+    height: 5em;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1.5%;
+}
+footer{
+    height: 15vh;
+    background: #222;
+}
+footer > div{
+    display: flex;
+    position: relative;
+    padding-top: 1%;
+    justify-content: center;
+    top: 10%;
+    color: white;
+    text-align: center;
+}
+footer div i{
+    margin: 0% 2%;
+    padding: 0.8%;
+    border: 1px solid white;
+}
+footer > span{
+    display: inline-block;
+    position: relative;
+    color: white;
+    z-index: 1;
+    padding-top: 0.5%;
+    left: 6%;
+}
+#slide :hover{
+    background: rgba(0,0,0,0.8);
+    color: white;
+}
+nav :hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+#schedule :hover{
+    opacity: 0.8;
+    color: lime;
+    border: 1px solid lime;
+    box-shadow: 1px 1px 8px white;
+}
+footer > div :hover{
+    opacity: 0.8;
+    color: lime;
+    border: 1px solid lime;
+}
+#cart :hover{
+    opacity: 0.8;
+    color: lime;
+}
+#schedule :active{
+    box-shadow: none;
+}
+footer div :hover{
+    box-shadow: 1px 1px 8px #aaa;
+}
+footer div :active{
+    box-shadow: none;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  @keyframes fade {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }

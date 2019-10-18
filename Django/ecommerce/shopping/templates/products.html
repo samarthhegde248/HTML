@@ -1,0 +1,6 @@
+<h1>Product Details:-</h1>
+<div>{{ object.product_name }}</div>
+<div>{{ object.product_description }}</div>
+<div>{{ object.cost }}</div>
+<div>{{ object.no_of_products }}</div>
+<button><a href="{% url 'buymenu' object.pk %}">BUY ME!</a></button>
